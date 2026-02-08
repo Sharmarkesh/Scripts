@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # A script to output a brief summary of system information
-chmod +x sysreport.sh
+
 freespace=$(df -h / | awk 'NR==2 {print $4}')
 freemem=$(free -h | awk 'NR==2 {print $4}')
 date=$(date '+%Y-%m-%d')
